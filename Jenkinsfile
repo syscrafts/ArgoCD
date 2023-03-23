@@ -2,7 +2,7 @@ pipeline{
     agent any
     
     environment{
-        APP_NAME = "gitops-argo-app"
+        APP_NAME = "jenkinsCI_argoCD"
     }
 
     stages{
@@ -17,7 +17,7 @@ pipeline{
             steps{
                 script{
                     git credentialsId: 'github',
-                    url: 'https://github.com/syscrafts/gitops_argo_CD.git',
+                    url: 'https://github.com/syscrafts/ArgoCD',
                     branch: 'main'
                 }
             }
