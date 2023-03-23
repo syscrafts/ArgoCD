@@ -2,7 +2,7 @@ pipeline{
     agent any
     
     environment{
-        APP_NAME = "jenkinsCI_argoCD"
+        APP_NAME = "jenkinsci_argocd"
     }
 
     stages{
